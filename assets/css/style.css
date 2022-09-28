@@ -1,0 +1,42 @@
+/* #startregion Common Rules */
+:root {
+    --ps-dark: #000000;
+    --ps-dark-light: #363636;
+    --ps-light: #FFFFFF;
+    --ps-primary: #0070D1;
+    --ps-new: #1F1F1F;
+    --ps-plus: #BEBCBB;   
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--ps-primary);
+}
+
+p {
+    color: var(--ps-dark-light);
+}
+/* #endregion common rules */
+
+/* #startregion header */
+.sony {
+    background-color: var(--ps-dark);
+    text-align: right;
+    padding: 1rem;
+    width: 100%;
+}
+
+.sony img {
+    width: 100px;
+}
+/* #endregion header*/
+
