@@ -31,7 +31,7 @@ p {
     color: var(--ps-dark-light);
 }
 
-.ps5, .slider {
+.ps5, .slider, .explore_ps4 {
     padding: 5rem 0;
 }
 /* #endregion common rules */
@@ -96,6 +96,17 @@ p {
 .all_games .row {
     row-gap: 1rem;
 }
+
+/* explore ps4 */
+.explore_ps4 p {
+    padding-bottom: 3rem;
+}
+
+.explore_ps4 .row {
+    row-gap: 2rem;
+}
+
+
 
 
 
