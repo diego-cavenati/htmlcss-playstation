@@ -8,22 +8,31 @@
     --ps-plus: #BEBCBB;   
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     max-width: 100%;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 }
 
 h4 {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
+    font-weight: 700;
     color: var(--ps-primary);
 }
 
 p {
     color: var(--ps-dark-light);
+}
+
+.ps5, .slider {
+    padding: 5rem 0;
 }
 /* #endregion common rules */
 
@@ -40,3 +49,20 @@ p {
 }
 /* #endregion header*/
 
+/* #startregion Main */
+/* ps5 */
+.ps5 .col img {
+    width: 70%;
+}
+
+.ps5 .col {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2rem;
+}
+
+/* .ps5 .row.row-cols-3.row-cols-md-5:first-child {
+    border-bottom: 1px solid var(--ps-primary); da rivedere
+} */
+
+/* #endregion main */
