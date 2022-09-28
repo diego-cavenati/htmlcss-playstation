@@ -65,4 +65,38 @@ p {
     border-bottom: 1px solid var(--ps-primary); da rivedere
 } */
 
+/* new releases */
+.featured {
+    background-image: url("../img/it-takes-two-hero-banner-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    color: var(--ps-light);
+}
+
+.featured img, .featured h2, .featured p, .all_games h3 {
+    padding-bottom: 1rem;
+}
+
+.featured img {
+    width: 60%;
+}
+
+.all_games {
+    background-color: var(--ps-new);
+    padding: 2rem 0;
+    color: var(--ps-light);
+}
+
+.all_games img {
+    border-radius: 1rem;
+}
+
+.all_games .row {
+    row-gap: 1rem;
+}
+
+
+
 /* #endregion main */
