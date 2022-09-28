@@ -5,7 +5,8 @@
     --ps-light: #FFFFFF;
     --ps-primary: #0070D1;
     --ps-new: #1F1F1F;
-    --ps-plus: #BEBCBB;   
+    --ps-plus: #BEBCBB;  
+    --ps-now:  #161C3B;
 }
 
 body {
@@ -31,7 +32,7 @@ p {
     color: var(--ps-dark-light);
 }
 
-.ps5, .slider, .explore_ps4 {
+.ps5, .slider, .explore_ps4, .new_discounts {
     padding: 5rem 0;
 }
 /* #endregion common rules */
@@ -106,8 +107,42 @@ p {
     row-gap: 2rem;
 }
 
+/* banner playstationplus */
+.playstation_plus {
+    background-color: var(--ps-plus);
+}
+
+.playstation_plus .row .col:first-child img {
+    width: 70%;
+    padding-bottom: 1rem;
+}
+
+.playstation_plus p {
+    padding-bottom: 0.7rem;
+}
 
 
+
+/* new discounts */
+.new_discounts p {
+    padding-bottom: 1rem;
+}
+
+
+/* banner playstationplus */
+.playstation_now {
+    background-color: var(--ps-now);
+}
+
+.playstation_now .row .col:first-child img {
+    width: 70%;
+    padding-bottom: 1rem;
+}
+
+.playstation_now p {
+    padding-bottom: 0.7rem;
+    color: var(--ps-light);
+}
 
 
 /* #endregion main */
