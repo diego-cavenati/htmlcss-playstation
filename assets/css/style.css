@@ -32,7 +32,12 @@ p {
     color: var(--ps-dark-light);
 }
 
-.ps5, .slider, .explore_ps4, .new_discounts {
+.ps5, 
+.slider, 
+.explore_ps4, 
+.new_discounts, 
+footer,
+.social {
     padding: 5rem 0;
 }
 /* #endregion common rules */
@@ -144,5 +149,18 @@ p {
     color: var(--ps-light);
 }
 
+/* social */
+.social h2 {
+    padding-bottom: 2rem;
+}
+
 
 /* #endregion main */
+
+
+
+/* #endregion footer */
+footer {
+    background-color: var(--ps-primary);
+}
+/* #endregion footer */
