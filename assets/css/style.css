@@ -7,6 +7,7 @@
     --ps-new: #1F1F1F;
     --ps-plus: #BEBCBB;  
     --ps-now:  #161C3B;
+    --ps-footer: #00439C;
 }
 
 body {
@@ -32,6 +33,10 @@ p {
     color: var(--ps-dark-light);
 }
 
+a {
+    text-decoration: none;
+}
+
 .ps5, 
 .slider, 
 .explore_ps4, 
@@ -40,9 +45,21 @@ footer,
 .social {
     padding: 5rem 0;
 }
+
+.dropdown_toggle::after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: -0.7em;
+    content: url('../img/chevron-down-solid.svg');
+    
+}
 /* #endregion common rules */
 
 /* #startregion header */
+header {
+    width: 100%;
+}
+
 .sony {
     background-color: var(--ps-dark);
     text-align: right;
@@ -53,6 +70,7 @@ footer,
 .sony img {
     width: 100px;
 }
+
 /* #endregion header*/
 
 /* #startregion Main */
@@ -66,10 +84,6 @@ footer,
     font-size: 1rem;
     padding: 2rem;
 }
-
-/* .ps5 .row.row-cols-3.row-cols-md-5:first-child {
-    border-bottom: 1px solid var(--ps-primary); da rivedere
-} */
 
 /* new releases */
 .featured {
@@ -161,6 +175,36 @@ footer,
 
 /* #endregion footer */
 footer {
-    background-color: var(--ps-primary);
+    background-color: var(--ps-footer);
+    color: var(--ps-light);
 }
+
+footer a {
+    color: var(--ps-light);
+    display: block;
+    line-height: 2.5rem;
+}
+
+footer a:hover {
+    color: var(--ps-light);
+}
+
+footer p {
+    color: var(--ps-light);
+}
+
+footer span {
+    color: var(--ps-light);
+}
+
+.sony_footer {
+    width: 25%;
+    padding-bottom: 1rem;
+}
+
+.logo_footer {
+    width: 25%;
+    padding-bottom: 2rem;
+}
+
 /* #endregion footer */
