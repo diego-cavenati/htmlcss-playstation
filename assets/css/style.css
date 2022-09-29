@@ -46,13 +46,9 @@ footer,
     padding: 5rem 0;
 }
 
-.dropdown_toggle::after {
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: -0.7em;
-    content: url('../img/chevron-down-solid.svg');
-    
-}
+
+
+
 /* #endregion common rules */
 
 /* #startregion header */
@@ -71,6 +67,39 @@ header {
     width: 100px;
 }
 
+.dropdown_toggle {
+    width: 35px;
+    padding: 0.7rem;
+}
+
+
+.dropdown_nav {
+    height: 100vw;
+}
+
+.games_link ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+.games_link li {
+    padding-left: 1em;
+    text-indent: -1em;
+    display: inline;
+    color: var(--ps-dark);
+}
+
+.games_link li a {
+    color: var(--ps-dark);
+}
+  
+.games_link li:before {
+    content: "•";
+    font-size: 1.2rem;
+    color: var(--ps-primary);
+    padding-right: 5px;
+  }
 /* #endregion header*/
 
 /* #startregion Main */
