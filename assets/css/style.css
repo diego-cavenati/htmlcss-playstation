@@ -44,16 +44,16 @@ footer,
 .social {
     padding: 5rem 0;
 }
+
+.zindex_99999 {
+    z-index: 99999;
+}
 /* #endregion common rules */
 
 /* #startregion header */
 header {
     width: 100%;
     z-index: 9999999;
-}
-
-.z_index_1 {
-    z-index: 999999999999999999;
 }
 
 .sony {
@@ -118,7 +118,7 @@ header {
 .carousel_indicators {
     position: absolute;
     right: 0;
-    bottom: -900px;
+    bottom: -150px;
     left: 0;
     z-index: 2;
     display: flex;
