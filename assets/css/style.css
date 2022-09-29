@@ -72,10 +72,6 @@ header {
     padding: 0.7rem;
 }
 
-.dropdown_nav {
-    height: 100vw;
-}
-
 .games_link ul {
     list-style: none;
     margin-left: 0;
