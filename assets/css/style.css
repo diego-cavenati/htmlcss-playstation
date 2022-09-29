@@ -37,7 +37,6 @@ a {
     text-decoration: none;
 }
 
-.ps5, 
 .slider, 
 .explore_ps4, 
 .new_discounts, 
@@ -45,15 +44,16 @@ footer,
 .social {
     padding: 5rem 0;
 }
-
-
-
-
 /* #endregion common rules */
 
 /* #startregion header */
 header {
     width: 100%;
+    z-index: 9999999;
+}
+
+.z_index_1 {
+    z-index: 999999999999999999;
 }
 
 .sony {
@@ -71,7 +71,6 @@ header {
     width: 35px;
     padding: 0.7rem;
 }
-
 
 .dropdown_nav {
     height: 100vw;
@@ -103,7 +102,38 @@ header {
 /* #endregion header*/
 
 /* #startregion Main */
+.slider {
+    padding-top: 8rem;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.logo_hero {
+    width: 40%;
+    padding-bottom: 1.5rem;
+}
+
+.carousel_indicators {
+    position: absolute;
+    right: 0;
+    bottom: -900px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    z-index: 1;
+}
+
+.img_button {
+    border-radius: 1rem;
+}
+
 /* ps5 */
+.ps5 {
+    padding: 12rem 0 5rem 0;
+}
+
 .ps5 .col img {
     width: 70%;
 }
