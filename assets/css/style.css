@@ -50,6 +50,87 @@ footer,
 }
 /* #endregion common rules */
 
+/* start region animation */
+
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+
+/* trim effect */
+.hvr-trim {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.hvr-trim:before {
+    content: '';
+    position: absolute;
+    border: white solid 2px;
+    border-radius: 0.2rem;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
+    opacity: 1;
+}
+
+.hvr-trim_black {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+}
+
+.hvr-trim_black:before {
+    content: '';
+    position: absolute;
+    border: black solid 2px;
+    border-radius: 0.2rem;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    opacity: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.hvr-trim_black:hover:before, .hvr-trim_black:focus:before, .hvr-trim_black:active:before {
+    opacity: 1;
+}
+/* endregion animation */
+
 /* #startregion header */
 header {
     width: 100%;
@@ -134,87 +215,9 @@ header {
     padding-left: 1rem;
 }
 
-/* trim effect */
-.hvr-trim {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-}
-
-.hvr-trim:before {
-    content: '';
-    position: absolute;
-    border: white solid 2px;
-    border-radius: 0.2rem;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-}
-
-.hvr-trim:hover:before, .hvr-trim:focus:before, .hvr-trim:active:before {
-    opacity: 1;
-}
-
-.hvr-trim_black {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    position: relative;
-}
-
-.hvr-trim_black:before {
-    content: '';
-    position: absolute;
-    border: black solid 2px;
-    border-radius: 0.2rem;
-    top: 4px;
-    left: 4px;
-    right: 4px;
-    bottom: 4px;
-    opacity: 0;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-}
-
-.hvr-trim_black:hover:before, .hvr-trim_black:focus:before, .hvr-trim_black:active:before {
-    opacity: 1;
-}
-
 .carousel_indicators {
     padding-top: 3rem;
     display: flex;
-}
-
-/* Float */
-.hvr-float {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-    -webkit-transform: translateY(-15px);
-    transform: translateY(-15px);
 }
 
 .img_button {
@@ -223,10 +226,6 @@ header {
 
 .on {
     border: 5px solid var(--ps-primary);
-}
-
-.carousel_indicators button {
-
 }
 
 /* ps5 */
@@ -303,13 +302,10 @@ header {
     padding-bottom: 0.7rem;
 }
 
-
-
 /* new discounts */
 .new_discounts p {
     padding-bottom: 1rem;
 }
-
 
 /* banner playstationplus */
 .playstation_now {
@@ -330,13 +326,9 @@ header {
 .social h2 {
     padding-bottom: 2rem;
 }
-
-
 /* #endregion main */
 
-
-
-/* #endregion footer */
+/* #startregion footer */
 footer {
     background-color: var(--ps-footer);
     color: var(--ps-light);
@@ -369,5 +361,4 @@ footer span {
     width: 25%;
     padding-bottom: 2rem;
 }
-
 /* #endregion footer */
